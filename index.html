@@ -1,47 +1,288 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um cara ai que faz umas coisas">
-    <meta name="theme-color" content="#000">
-    <meta name="author" content="ImEnigma2x0">
-    <meta name="robots" content="index,follow">
-    <title>ImEnigma2x0</title>
-    <style>.container,.info,.social,body{display:flex}#t,.s-info p{text-align:center}.s-info p,.server a{text-decoration:none;color:#fff}#t,.s-info p,.server a,body{color:#fff}*{margin:0;padding:0;box-sizing:border-box}body{width:100%;height:100vh;background-color:#000;font-family:Roboto,sans-serif;justify-content:center}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#333}::-webkit-scrollbar-thumb{background:#888}::-webkit-scrollbar-thumb:hover{background:#555}.container{flex-direction:column;margin:0 15%;align-items:center;justify-content:center}.info{flex-direction:column;align-items:center}.info p{font-size:1.2em}.s-btn,.s-info p,.s-role-text{font-size:1.2rem}.social{gap:7px}.s-body,.s-info,.server{gap:10px;display:flex}.s-list{display:flex;flex-wrap:wrap;justify-content:center}.server{align-items:center;justify-content:center;border-radius:30px;width:800px;max-width:100%;border:5px solid #fff;box-shadow:0 0 15px #fff;padding:20px;flex-shrink:0;margin-top:20px;position:relative}.s-body{align-items:center;flex-direction:column;margin:0}.s-info{flex-direction:column;align-items:center}.s-role{display:flex;align-items:center}.s-role-text{color:#5865f2;font-weight:400}#t{font-size:2rem!important;font-weight:800}.s-icon{max-width:170px;width:100%;border-radius:50%}.s-btn{border-radius:15px;padding:15px 50px;border:2px solid #fff}.s-btn:hover{background-color:#fff;color:#000}@media screen and (max-width:1024px){.server{width:auto}}@media screen and (max-width:575px){.container{margin:0 5%}.s-list{max-width:90%}.s-info h3{font-size:1.1rem!important}.s-info p{font-size:.9rem}.info p{font-size:1rem;margin-bottom:10px}.s-info{gap:5px}.s-btn{font-size:.8rem;padding:10px 30px}.s-icon{max-width:100%;width:80px;border-radius:50%}::-webkit-scrollbar{width:0}.s-role-text{color:#5865f2;font-size:1rem}}</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Um cara ai que faz umas coisas">
+  <meta name="theme-color" content="#000">
+  <meta name="author" content="ImEnigma2x0">
+  <meta name="robots" content="index,follow">
+  <title>ImEnigma2x0</title>
+  <style>
+    .container,
+    .info,
+    .social,
+    body {
+      display: flex
+    }
+
+    #t,
+    .s-info p {
+      text-align: center
+    }
+
+    .s-info p,
+    .server a {
+      text-decoration: none;
+      color: #fff
+    }
+
+    #t,
+    .s-info p,
+    .server a,
+    body {
+      color: #fff
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+      font-family: Roboto, sans-serif;
+      justify-content: center
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #333
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555
+    }
+
+    .container {
+      flex-direction: column;
+      margin: 0 15%;
+      align-items: center;
+      justify-content: center
+    }
+
+    .info {
+      flex-direction: column;
+      align-items: center
+    }
+
+    .info p {
+      font-size: 1.2em
+    }
+
+    .s-btn,
+    .s-info p,
+    .s-role-text {
+      font-size: 1.2rem
+    }
+
+    .social {
+      gap: 7px
+    }
+
+    .s-body,
+    .s-info,
+    .server {
+      gap: 10px;
+      display: flex
+    }
+
+    .s-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center
+    }
+
+    .server {
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      width: 800px;
+      max-width: 100%;
+      border: 5px solid #fff;
+      box-shadow: 0 0 15px #fff;
+      padding: 20px;
+      flex-shrink: 0;
+      margin-top: 20px;
+      position: relative
+    }
+
+    .s-body {
+      align-items: center;
+      flex-direction: column;
+      margin: 0
+    }
+
+    .s-info {
+      flex-direction: column;
+      align-items: center
+    }
+
+    .s-role {
+      display: flex;
+      align-items: center
+    }
+
+    .s-role-text {
+      color: #5865f2;
+      font-weight: 400
+    }
+
+    #t {
+      font-size: 2rem !important;
+      font-weight: 800
+    }
+
+    .s-icon {
+      max-width: 170px;
+      width: 100%;
+      border-radius: 50%
+    }
+
+    .s-btn {
+      border-radius: 15px;
+      padding: 15px 50px;
+      border: 2px solid #fff
+    }
+
+    .s-btn:hover {
+      background-color: #fff;
+      color: #000
+    }
+
+    @media screen and (max-width:1024px) {
+      .server {
+        width: auto
+      }
+    }
+
+    @media screen and (max-width:575px) {
+      .container {
+        margin: 0 5%
+      }
+
+      .s-list {
+        max-width: 90%
+      }
+
+      .s-info h3 {
+        font-size: 1.1rem !important
+      }
+
+      .s-info p {
+        font-size: .9rem
+      }
+
+      .info p {
+        font-size: 1rem;
+        margin-bottom: 10px
+      }
+
+      .s-info {
+        gap: 5px
+      }
+
+      .s-btn {
+        font-size: .8rem;
+        padding: 10px 30px
+      }
+
+      .s-icon {
+        max-width: 100%;
+        width: 80px;
+        border-radius: 50%
+      }
+
+      ::-webkit-scrollbar {
+        width: 0
+      }
+
+      .s-role-text {
+        color: #5865f2;
+        font-size: 1rem
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="info">
-            <img src="https://i.enigmaa.me/icon/l.webp" alt="Logo" style="width: 150px; height: 150px; border-radius: 50%;">
-            <h1>ImEnigma2x0</h1>
-            <p>Um cara ai que faz umas coisas</p>
-            <div class="social">
-                <a href="https://instagram.com/ImEnigma2x0" target="_blank" aria-label="Instagram Link"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#FFF"><path d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zm.05 2.23H7.06c-1.45 0-2.7.43-3.53 1.25a4.82 4.82 0 0 0-1.3 3.54v9.92c0 1.5.43 2.7 1.3 3.58a5 5 0 0 0 3.53 1.25h9.88a5 5 0 0 0 3.53-1.25 4.73 4.73 0 0 0 1.4-3.54V7.02a5 5 0 0 0-1.3-3.49 4.82 4.82 0 0 0-3.54-1.3zM12 5.76c3.39 0 6.2 2.8 6.2 6.2a6.2 6.2 0 0 1-12.4 0 6.2 6.2 0 0 1 6.2-6.2zm0 2.22a3.99 3.99 0 0 0-3.97 3.97A3.99 3.99 0 0 0 12 15.92a3.99 3.99 0 0 0 3.97-3.97A3.99 3.99 0 0 0 12 7.98zm6.44-3.77a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z"/></svg></a>
-                <a href="https://twitter.com/ImEnigma2x0" target="_blank" aria-label="Twitter Link"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
-                <a href="https://youtube.com/@ImEnigma2x0" targe="_blank" aria-label="Youtube Link"><svg viewBox="0 0 24 24" width="30" height="30" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
-                <a href="http://github.com/ImEnigma2x0" target="_blank" aria-label="Github Link"><svg viewBox="0 0 24 24" width="30" height="30" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-                <a href="http://twitch.tv/ImEnigma2x0" target="_blank" aria-label="Twitch Link"><svg viewBox="0 0 24 24" width="30" height="30" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"></path></svg></a>
-            </div>
-        </div>
-        <div class="s-list">
-            <div class="server">
-                <div class="s-body">
-                    <img class="s-icon" src="https://i.enigmaa.me/icon/si-pkb.webp" alt="Lives Porkinbr">
-                    <div class="s-info">
-                        <p id="t">Lives Porkinbr</p>
-                        <div class="s-role">
-                            <svg class="s-role-badge" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="m17.2719 3h-9.54383c-.14912 1.9386-1.78947 3.42982-3.72807 3.42982v.89474c0 4.39914 2.08772 8.50004 5.74123 11.40794l2.75877 2.1622 2.7588-2.1622c3.6535-2.8334 5.7412-7.0088 5.7412-11.40794v-.89474c-1.9386 0-3.5044-1.49122-3.7281-3.42982zm-6.4868 12.8991c-2.23685-1.7895-3.57896-4.3245-3.57896-7.08331v-.52193c1.19298 0 2.23684-.89474 2.3114-2.08772h2.98246v11.10966z" fill="#5865f2"/></svg>
-                            <span class="s-role-text">Admin</span>
-                        </div>
-                        <p id="desc">Discord do youtuber PORKINBR, ditador, fanático religioso, cheiroso, e HYPE! APENAS!</p>
-                    </div>
-                    <a class="s-btn" href="https://discord.gg/THsVSbCKEC" target="_blank">Entrar</a>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="info">
+      <img src="https://i.enigmaa.me/icon/l.webp" alt="Logo" style="width: 150px; height: 150px; border-radius: 50%;">
+      <h1>ImEnigma2x0</h1>
+      <p>Um cara ai que faz umas coisas</p>
+      <div class="social">
+        <a href="https://instagram.com/ImEnigma2x0" target="_blank" aria-label="Instagram Link"><svg
+            xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#FFF">
+            <path
+              d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zm.05 2.23H7.06c-1.45 0-2.7.43-3.53 1.25a4.82 4.82 0 0 0-1.3 3.54v9.92c0 1.5.43 2.7 1.3 3.58a5 5 0 0 0 3.53 1.25h9.88a5 5 0 0 0 3.53-1.25 4.73 4.73 0 0 0 1.4-3.54V7.02a5 5 0 0 0-1.3-3.49 4.82 4.82 0 0 0-3.54-1.3zM12 5.76c3.39 0 6.2 2.8 6.2 6.2a6.2 6.2 0 0 1-12.4 0 6.2 6.2 0 0 1 6.2-6.2zm0 2.22a3.99 3.99 0 0 0-3.97 3.97A3.99 3.99 0 0 0 12 15.92a3.99 3.99 0 0 0 3.97-3.97A3.99 3.99 0 0 0 12 7.98zm6.44-3.77a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z" />
+          </svg></a>
+        <a href="https://twitter.com/ImEnigma2x0" target="_blank" aria-label="Twitter Link"><svg
+            xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+            </path>
+          </svg></a>
+        <a href="https://youtube.com/@ImEnigma2x0" targe="_blank" aria-label="Youtube Link"><svg viewBox="0 0 24 24"
+            width="30" height="30" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"
+            stroke-linejoin="round" class="css-i6dzq1">
+            <path
+              d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+            </path>
+            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+          </svg></a>
+        <a href="http://github.com/ImEnigma2x0" target="_blank" aria-label="Github Link"><svg viewBox="0 0 24 24"
+            width="30" height="30" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"
+            stroke-linejoin="round" class="css-i6dzq1">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg></a>
+        <a href="http://twitch.tv/ImEnigma2x0" target="_blank" aria-label="Twitch Link"><svg viewBox="0 0 24 24"
+            width="30" height="30" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"
+            stroke-linejoin="round" class="css-i6dzq1">
+            <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"></path>
+          </svg></a>
+      </div>
     </div>
-    <script>var sv=0,list=[{n:"Lives Porkinbr",r:"Developer",iv:"https://discord.gg/THsVSbCKEC",i:"pkb",desc:"Discord do youtuber PORKINBR, ditador, fan\xe1tico religioso, cheiroso, e HYPE! APENAS!"},{n:"HeavenMC",r:"Admin",iv:"https://discord.gg/nKPgBwEUDR",i:"hvn",desc:"Discord do servidor HeavenMC, um servidor de Minecraft com uma comunidade incr\xedvel e uma staff muito dedicada!"},{n:"Tips For Discord",r:"Coordinator",iv:"https://discord.gg/nKPgBwEUDR",i:"tip",desc:"Conecte-se com v\xe1rias pessoas importantes do Discord, como Admins, Donos e Moderadores de servidores grandes e ainda aprenda tudo sobre o discord!"}];setInterval(()=>{++sv>=list.length&&(sv=0);var e=list[sv];document.querySelector(".s-icon").src=`https://i.enigmaa.me/icon/si-${e.i}.webp`,document.querySelector("#t").innerText=e.n,document.querySelector(".s-role-text").innerHTML=e.r,document.querySelector(".s-btn").href=e.iv,document.querySelector("#desc").innerHTML=e.desc},5e3);</script>
+    <div class="s-list">
+      <div class="server">
+        <div class="s-body">
+          <img class="s-icon" src="https://i.enigmaa.me/icon/si-pkb.webp" alt="Lives Porkinbr">
+          <div class="s-info">
+            <p id="t">Lives Porkinbr</p>
+            <div class="s-role">
+              <div style="display: flex; justify-content: space-between; gap: 5px;">
+                <svg class="s-role-badge" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                  <path
+                    d="m17.2719 3h-9.54383c-.14912 1.9386-1.78947 3.42982-3.72807 3.42982v.89474c0 4.39914 2.08772 8.50004 5.74123 11.40794l2.75877 2.1622 2.7588-2.1622c3.6535-2.8334 5.7412-7.0088 5.7412-11.40794v-.89474c-1.9386 0-3.5044-1.49122-3.7281-3.42982zm-6.4868 12.8991c-2.23685-1.7895-3.57896-4.3245-3.57896-7.08331v-.52193c1.19298 0 2.23684-.89474 2.3114-2.08772h2.98246v11.10966z"
+                    fill="#5865f2" />
+                </svg>
+                <span class="s-role-text" style="margin-right: 0.5rem;">Developer & Admin</span>
+              </div>
+              <p style="font-size: 0.9em; color: #999;" id="m">+20k membros</p>
+            </div>
+            <p id="desc">Discord do youtuber PORKINBR, ditador, fanático religioso, cheiroso, e HYPE! APENAS!</p>
+          </div>
+          <a class="s-btn" href="https://discord.gg/THsVSbCKEC" target="_blank">Entrar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>var sv = 0, list = [{ n: "Lives Porkinbr", r: "Developer & Admin", iv: "https://discord.gg/THsVSbCKEC", i: "pkb", desc: "Discord do youtuber PORKINBR, ditador, fan\xe1tico religioso, cheiroso, e HYPE! APENAS!", m: "+20k" }, { n: "LalaDuLol", r: "Developer", iv: "https://discord.gg/8BQX3MjThw", i: "lol", desc: "Servidor Oficial do Youtuber LalaDuLol", m: '+62k membros' }, { n: "Detetive Youtuber", r: "Developer", iv: "_blank", i: "dyt", desc: "Antigo servidor do Detetive Youtuber (atualmente não existe mais).", m: '+1k membros' }]; setInterval(() => { ++sv >= list.length && (sv = 0); var e = list[sv]; document.querySelector(".s-icon").src = `https://i.enigmaa.me/icon/si-${e.i}.webp`, document.querySelector("#t").innerText = e.n, document.querySelector("#m").innerHTML = e.m; document.querySelector(".s-role-text").innerHTML = e.r, document.querySelector(".s-btn").href = e.iv, document.querySelector("#desc").innerHTML = e.desc }, 5e3);</script>
 </body>
+
 </html>
